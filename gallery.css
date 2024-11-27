@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    max-width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .exo-2-uniquifier {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  body{
+    background:black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; 
+   backdrop-filter: blur(10px);
+  }
+  .active{
+    color: red;
+  }
+  header{
+    position: fixed;
+    display: flex;
+    right: 0%;
+    place-content: right;
+    place-items: right;
+    z-index: 99;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding: 10px 500px;
+  }
+  header ul{
+    list-style: none;
+    background: transparent;
+    position: relative;
+    right: -35rem;
+  }
+  header ul li{
+    display: inline-block;
+    position: relative;
+  }
+  header ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    font-family: georgia; 
+  }
+  header ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+  }
+  header ul li ul.dropdown{
+    text-align: center;
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    left: 0%;
+    z-index: 999;
+    font-family: georgia; 
+    display: none;
+  }
+  header ul li a:hover{
+    background: #112c66;
+  }
+  header ul li:hover ul.dropdown {
+    display: block;
+  }
+  .cover{
+    position: absolute;
+    width: 100%;
+    height: 1780%;
+    top: 90%;
+    background: linear-gradient(91deg, rgb(250, 227, 250)0% , rgb(65, 65, 65)50%, rgb(159, 203, 214)60%);
+  }
+  /*MININSTERS*/
+  .case{
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 220%;
+    top: 45rem;
+    left: 5rem;
+    background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  .case .pics{
+    margin-top: 3rem;
+  }
+  .case .case1{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: #e60073;
+  }
+  .case p{
+    position: absolute;
+    font-size: 5em;
+    left: 34%;
+    font-weight: 700;
+    
+  }
+  .case img{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+
+/*CHORISTERS*/
+  .case2{
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 220%;
+    top: 165rem;
+    left: 5rem;
+    background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  .case2 .can2{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: #e60073;
+  }
+  .case2 p{
+    position: absolute;
+    font-size: 5em;
+    left: 34%;
+    font-weight: 700;
+    
+  }
+  .case2 img{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  /*THE CHURCH*/
+  .case3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 190%;
+    top: 275rem;
+    left: 0rem;
+    background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  .case3 .can3{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: #e60073;
+  }
+  .case3 p{
+    position: absolute;
+    font-size: 5em;
+    left: 34%;
+    font-weight: 700;
+    
+  }
+  .case3 .pics{
+    margin-top: 2rem;
+  }
+  .case3 img{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  /*THE ABLE MEN*/
+  .case4{
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 250%;
+    top: 370rem;
+    left: 5rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+  }
+  .case4 .can4{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: #e60073;
+  }
+  .case4 p{
+    position: absolute;
+    font-size: 5em;
+    left: 34%;
+    font-weight: 700;
+    
+  }
+  .case4 .pics{
+    margin-top: 4rem;
+  }
+  .case4 img{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+    /*THE SUPPORTIVE WOMEN*/
+    .case5{
+      position: absolute;
+      display: block;
+      width: 90%;
+      height: 250%;
+      top: 490rem;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+      left: 5rem;
+      background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+    }
+    .case5 .can5{
+      position: absolute;
+      width: 100%;
+      height: 10%;
+      background: #e60073;
+    }
+    .case5 p{
+      position: absolute;
+      font-size: 5em;
+      left: 22%;
+      font-weight: 700;
+      
+    }
+    .case5 .pics{
+      margin-top: 4rem;
+    }
+    .case5{
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    }
+        /*THE YOUTH*/
+        .case6{
+          position: absolute;
+          display: block;
+          width: 90%;
+          height: 250%;
+          top: 613rem;
+          left: 5rem;
+          background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+        .case6 .can6{
+          position: absolute;
+          width: 100%;
+          height: 10%;
+          background: #e60073;
+        }
+        .case6 p{
+          position: absolute;
+          font-size: 5em;
+          left: 35%;
+          font-weight: 700;
+          
+        }
+        .case6 .pics{
+          margin-top: 4rem;
+        }
+        .case6{
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+         /*THE CHILDREN*/
+         .case7{
+          position: absolute;
+          display: block;
+          width: 90%;
+          height: 250%;
+          top: 733rem;
+          left: 5rem;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+          background: linear-gradient(315deg, rgb(216, 216, 216)0%, rgb(255, 239, 239)90%);
+        }
+        .case7 .can7{
+          position: absolute;
+          width: 100%;
+          height: 10%;
+          background: #e60073;
+        }
+        .case7 p{
+          position: absolute;
+          font-size: 5em;
+          left: 35%;
+          font-weight: 700;
+          
+        }
+        .case7 .pics{
+          margin-top: 4rem;
+        }
+        .case7 img{
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+  .bob{
+    top: 90%;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    left: 0;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #001aff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #00d0ff44,
+    0 0 50px #001aff,
+    0 0 100px #002fff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--1));
+}
+.bubbles span:nth-child(even){
+    background: #ff000d;
+    box-shadow: 0 0 0 10px #a7121944,
+    0 0 50px #ff000d,
+    0 0 100px #ff000d;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+    from{
+      rotate: -10deg;
+    }
+    to{
+      
+      rotate: 25deg;
+    }
+}
+.glow {
+  position: absolute;
+  top: 15rem;
+  top: 10rem;
+  left: 8%;
+  color: #fff;
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+  from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000,
+       0 0 60px #e60000, 0 0 70px #e60000;
+       font-size: 130px;
+       rotate: 0deg;
+       font-weight: 800;
+  }
+    to{
+      font-size: 140px;
+      font-weight: 900;
+      text-shadow: 0 0 20px #fff, 0 0 30px #1235ff, 0 0 40px #1235ff, 0 0 50px #1235ff, 0 0 60px #1235ff, 0 0 70px #1235ff, 0 0 80px #1235ff;
+    }
+}
+  @keyframes appear{
+  from{
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+
+  }
+  to{
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+  }
+
+}
+.block{
+ animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+ .view{
+position: relative;
+display: flex;
+width: 100%;
+height: 100%;
+top: 8rem;
+margin-bottom: 0px;
+}
+.view img{
+position: relative;
+width: 90%;
+height: 70%;
+margin-left: 10px;
+}
+.view label{
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  left: 0;
+}
+.view span{
+  position: relative;
+  top: 2rem;
+  left: 2%;
+  font-weight: 600;
+}
+footer.bottom{
+  position: absolute;
+  display: flex;
+  top: 850rem;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  width: 90%;
+  height: 30%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  background:linear-gradient(315deg, #fff 2%, #d7e1ec 74% );
+}
+a{
+  color: #ff0000;
+}
+footer.bottom .p1{
+  font-size: 3em;
+  left: 25%;
+ position: absolute;
+ font-family: georgia; 
+
+} 
+.ber .add{
+position: absolute;
+top: 5rem;
+left: 20%;
+}
+.ber .phone{
+position: absolute;
+top: 5.5rem;
+right: 23%;
+}
+.bet{
+font-family: georgia; 
+position: relative;
+cursor: pointer;
+top: 9rem;
+left: 70%;
+margin-left: 40px;
+display: inline-block;
+height: 60px;
+width: 60px;
+background-color: white;
+border-radius: 50px;
+line-height: 60px;
+text-align: center;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ber .bet .icon {
+font-size: 25px;
+}
+.face a{
+color: black;
+text-decoration: none;
+}
+.face a:hover{
+color: #316FF6; 
+}
+
+
+.wat a{
+color: black;
+text-decoration: none;
+}
+.wat a:hover{
+color: #075E54; 
+}
+
+.insta a{
+color: black;
+text-decoration: none;
+}
+.insta a:hover{
+color: 	#833AB4;
+}
+
+.you a{
+color: black;
+text-decoration: none;
+}
+.you a:hover{
+color: #e1306c;
+}
+
+.ber .bet:hover{
+width: 70px;
+transition: 0.7s; 
+}
+p.p2{
+  position: absolute;
+  top: 861rem;
+  left: 60%;
+}

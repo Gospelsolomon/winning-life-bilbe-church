@@ -1,0 +1,1624 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    max-width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .exo-2-uniquifier {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  body{
+    background:black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; 
+   backdrop-filter: blur(10px);
+  }
+  .active{
+    color: red;
+  }
+  header{
+    position: fixed;
+    display: flex;
+    right: 0%;
+    place-content: right;
+    place-items: right;
+    z-index: 99;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding: 10px 500px;
+  }
+  header ul{
+    list-style: none;
+    background: transparent;
+    position: relative;
+    right: -35rem;
+  }
+  header ul li{
+    display: inline-block;
+    position: relative;
+  }
+  header ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    font-family: georgia; 
+  }
+  header ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+  }
+  header ul li ul.dropdown{
+    text-align: center;
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    left: 0%;
+    z-index: 999;
+    font-family: georgia; 
+    display: none;
+  }
+  header ul li a:hover{
+    background: #112c66;
+  }
+  header ul li:hover ul.dropdown {
+    display: block;
+  }
+
+  
+  .cover{
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    top: 90%;
+    background: white;
+  }
+  .wrapper{
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    height: 793%;
+    overflow: hidden;
+    background: transparent;
+    left: 0;
+}
+
+.box div{
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    background-color: transparent; 
+    border: 6px solid blue;
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+    background-image: url(images/dad2.jpg);
+    background-size: cover;
+    opacity: 0%;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+    background-image: url(images/dad.jpg);
+    background-size: cover;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+    background-image: url(images/dad3.jpg);
+    background-size: cover;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+    background-image: url(images/IMG-20221112-WA0004.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(11){
+  top: 12%;
+  left: 42%;
+  animation: animate 19s linear infinite;
+}
+.box div:nth-child(12){
+  top: 70%;
+  left: 50%;
+  animation: animate 23s linear infinite;
+}
+.box div:nth-child(13){
+  top: 17%;
+  left: 6%;
+  animation: animate 17s linear infinite;
+}
+.box div:nth-child(14){
+  top: 20%;
+  left: 60%;
+  animation: animate 17s linear infinite;
+}
+.box div:nth-child(15){
+  top: 67%;
+  left: 10%;
+  animation: animate 11s linear infinite;
+}
+.box div:nth-child(16){
+  top: 80%;
+  left: 70%;
+  animation: animate 25s linear infinite;
+}
+.box div:nth-child(17){
+  top: 60%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(18){
+  top: 32%;
+  left: 25%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(19){
+  top: 90%;
+  left: 25%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(20){
+  top: 20%;
+  left: 80%;
+  animation: animate 23s linear infinite;
+}
+
+.box div:nth-child(even){
+  border: 6px solid skyblue;
+}
+@keyframes animate{
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.glow {
+  position: absolute;
+  top: 15rem;
+  top: 10rem;
+  left: 0%;
+  color: #fff;
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+  from{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000,
+       0 0 60px #e60000, 0 0 70px #e60000;
+       font-size: 120px;
+       rotate: 0deg;
+       font-weight: 800;
+  }
+    to{
+      font-size: 130px;
+      font-weight: 900;
+      text-shadow: 0 0 20px #fff, 0 0 30px #1235ff, 0 0 40px #1235ff, 0 0 50px #1235ff, 0 0 60px #1235ff, 0 0 70px #1235ff, 0 0 80px #1235ff;
+    }
+}
+
+.table{
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: 122%;
+  outline: 1px solid grey;
+  top: 50rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+.table .ht{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(199, 199, 199);
+  width: 100%;
+  height: 8%;
+ border-bottom: 1px solid grey;
+}
+.ht p.month{
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 45px;
+  color: black;
+  text-align: center;
+}
+.table .days{
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 6%;
+  border-bottom: 1px solid grey;
+}
+
+.table .line1{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 12rem;
+}
+.table .line2{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 23.5rem;
+}
+.table .line3{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 34rem;
+}
+.table .line4{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 46rem;
+}
+.table .line5{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 58rem;
+}
+.table .line6{
+  width: 0.1%;
+  height: 52.8rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 69rem;
+}
+.table .dash1{
+  width: 100%;
+  height: 5%;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 12rem;
+  left: 0rem;
+}
+.table .dash2{
+  width: 100%;
+  height: 5%;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 22rem;
+  left: 0rem;
+}
+.table .dash3{
+  width: 100%;
+  height: 5%;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 32rem;
+  left: 0rem;
+}
+.table .dash4{
+  width: 100%;
+  height: 5%;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 42.5rem;
+  left: 0rem;
+}
+
+.cov1{
+  width: 73%;
+  height: 250%;
+  background: rgb(194, 194, 194);
+  position: absolute;
+  top: 3.5rem;
+}
+
+.circle .num1{
+  position: absolute;
+  left: 67.5rem;
+  top: 2.9rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num2{
+  position: absolute;
+  left: 77.7rem;
+  top: 2.9rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num3{
+  position: absolute;
+  left: 10.5rem;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num4{
+  position: absolute;
+  left: 22rem;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num5{
+  position: absolute;
+  left: 26em;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num6{
+  position: absolute;
+  left: 35.6em;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num7{
+  position: absolute;
+  left: 56.5rem;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num8{
+  position: absolute;
+  left: 67.5rem;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num9{
+  position: absolute;
+  left: 62.2em;
+  top: 12rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num10{
+  position: absolute;
+  left: 10.5rem;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num11{
+  position: absolute;
+  left: 22rem;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num12{
+  position: absolute;
+  left: 26em;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num13{
+  position: absolute;
+  left: 35.6em;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num14{
+  position: absolute;
+  left: 56.5rem;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num15{
+  position: absolute;
+  left: 67.5rem;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num16{
+  position: absolute;
+  left: 62.2em;
+  top: 22.2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num17{
+  position: absolute;
+  left: 10.5rem;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num18{
+  position: absolute;
+  left: 22rem;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num19{
+  position: absolute;
+  left: 26em;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num20{
+  position: absolute;
+  left: 35.6em;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num21{
+  position: absolute;
+  left: 56.5rem;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num22{
+  position: absolute;
+  left: 67.5rem;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num23{
+  position: absolute;
+  left: 62.2em;
+  top: 32rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num24{
+  position: absolute;
+  left: 10.5rem;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num25{
+  position: absolute;
+  left: 22rem;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num26{
+  position: absolute;
+  left: 26em;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num27{
+  position: absolute;
+  left: 35.6em;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+ .num28{
+  position: absolute;
+  left: 56.5rem;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle .num29{
+  position: absolute;
+  left: 67.5rem;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle .num30{
+  position: absolute;
+  left: 62.2em;
+  top: 42.6rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.hover{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/orange.JPG);
+  position: absolute;
+  top: 12rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.hover P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover:hover .SS1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS1{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*wednesday*/
+.hover1{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/orange.JPG);
+  position: absolute;
+  top: 12rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 43%;
+}
+.hover1 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover1 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover1:hover .SS2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS2{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*monday*/
+.hover2{
+  width: 14.5%;
+  height: 300%;
+  background-image: url(images/orange.JPG);
+  position: absolute;
+  top: 12rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 15%;
+}
+.hover2 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover2 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover2:hover .SS3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS3{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*thursday*/
+.hover3{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/orange.JPG);
+  position: absolute;
+  top: 12rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 58%;
+}
+.hover3 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover3 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover3:hover .SS4{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS4{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*2sunday*/
+.hover4{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 22rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.hover4 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover4 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover4:hover .SS5{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS5{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*monday*/
+.hover5{
+  width: 14.5%;
+  height: 300%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 22rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 15%;
+}
+.hover5 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover5 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover5:hover .SS6{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS6{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*2wednesday*/
+.hover6{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 22rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 43%;
+}
+.hover6 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover6 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover6:hover .SS7{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS7{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*2thursday*/
+.hover7{
+  width: 15%;
+  height: 300%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 22rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 58%;
+}
+.hover7 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover7 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover7:hover .SS8{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS8{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*3rdsundayday*/
+.hover8{
+  
+  width: 15%;
+  height: 312%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.hover8 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover8 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover8:hover .SS9{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS9{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*3rdmonday*/
+.hover9{
+  width: 14.5%;
+  height: 313%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 15%;
+}
+.hover9 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover9 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover9:hover .SS10{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS10{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*3rdwednesday*/
+.hover11{
+
+  
+  width: 15%;
+  height: 320%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 43%;
+}
+.hover11 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover11 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover11:hover .SS12{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS12{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+
+
+/*3rdthursday*/
+.hover10{
+
+  width: 15%;
+  height: 312%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 58%;
+}
+.hover10 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover10 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover10:hover .SS11{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS11{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*3rdfriday*/
+.hover12{
+
+  width: 13.8%;
+  height: 312%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 73.2%;
+}
+.hover12 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover12 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover12:hover .SS13{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS13{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*3rdsartuday*/
+.hover13{
+
+  width: 13%;
+  height: 312%;
+  background-image: url(images/red.JPG);
+  position: absolute;
+  top: 32rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 87%;
+}
+.hover13 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 2rem;
+  color: rgb(255, 255, 255)
+}
+.hover13 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover13:hover .SS14{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS14{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*4 sunday*/
+.hover14{
+  width: 15%;
+  height: 312%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 42.6rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+}
+.hover14 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover14 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover14:hover .SS15{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS15{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*4 monday*/
+.hover15{
+  width: 14.5%;
+  height: 308%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 42.6rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 15%;
+  
+}
+.hover15 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover15 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover15:hover .SS16{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS16{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+/*4 wednesday*/
+.hover16{
+  width: 15%;
+  height: 310%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 42.6rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 43%;
+  
+}
+.hover16 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover16 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover16:hover .SS17{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS17{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/* 4thursday*/
+.hover17{
+
+  width: 15%;
+  height: 312%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 42.6rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 58%;
+}
+.hover17 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 3rem;
+  color: rgb(255, 255, 255)
+}
+.hover17 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover17:hover .SS18{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS18{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+/*4th saturday*/
+.hover18{
+
+  width: 13%;
+  height: 312%;
+  background-image: url(images/blue.JPG);
+  position: absolute;
+  top: 42.6rem;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 87%;
+}
+.hover18 P{
+  position: absolute;
+  top: 3rem;
+  font-size: 17px;
+  left: 2rem;
+  color: rgb(255, 255, 255)
+}
+.hover18 span{
+  position: absolute;
+  top: 55px;
+  left: 0%;
+}
+.hover18:hover .SS19{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+  transition: .6s;
+}
+.SS19{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  opacity: 0%;
+  background: rgba(0, 0, 0, 0.6); 
+  top:0rem;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

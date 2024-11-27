@@ -1,0 +1,524 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  max-width: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.exo-2-uniquifier {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+body{
+background-color: black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ height: 100%;
+ width: 100%;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+ backdrop-filter: blur(10px);
+ font-family: georgia; 
+}
+.active{
+  color: red;
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+header{
+  position: fixed;
+  display: flex;
+  right: 0%;
+  place-content: right;
+  place-items: right;
+  z-index: 99;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  padding: 10px 500px;
+}
+ul{
+  list-style: none;
+  background: transparent;
+  position: relative;
+  right: -35rem;
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+}
+ul li ul.dropdown li{
+  display: block;
+  text-align: center;
+}
+ul li ul.dropdown{
+  text-align: center;
+  width: 100%;
+  background: #22438c;
+  position: absolute;
+  left: 0%;
+  z-index: 999;
+  font-family: georgia; 
+  display: none;
+}
+ul li a:hover{
+  background: #112c66;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.slider .img-box{
+  font-family: georgia; 
+  position: absolute;
+  display: flex;
+  top: 3.7%;
+  width: 100%;
+  height: 90%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .img-box .slider-img{
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 40px;
+  opacity: 70%;
+  padding: 4px;
+  margin: 0;
+  padding: 0;
+}
+ .slider .img-box::before{
+  content: '';
+  position: absolute;
+  top: -4%;
+  width: 100%;
+  height: 111%;
+  background-color: rgb(0, 0, 0, 0.6)
+}
+.slider a.btn{
+  position: absolute;
+  justify-content: space-between;
+  left: 8.5%;
+  outline: 0;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider a.btnn{
+  position: absolute;
+  justify-content: space-between;
+  left: 90%;
+  outline: 0;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.slider a:hover{
+  color: rgb(255, 255, 255);
+  outline: 0;
+  border: 0;
+}
+.slider .but{
+  position: absolute;
+  top: 42rem;
+  left: 40%;
+  font-weight: 500;
+  font-family: cursive;
+  padding: 10px 10px;
+  font-size: large; 
+  outline: 0;
+  border: 0;
+  background-color: #ff0000;
+  transition: .3s;
+}
+.slider button:hover{
+  background-color: #ffffff;
+}
+.slider button a{
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+}
+.slider button a:hover{
+  color: rgb(4, 0, 255);
+}
+.slider .butt{
+  position: absolute;
+  top: 42rem;
+  left: 60%;
+  font-weight: 500;
+  font-family: cursive;
+  padding: 10px 10px;
+  font-size: large; 
+  outline: 0;
+  border: 0;
+  background-color: #ff0000;
+  color: azure;
+  transition: .3s;
+}
+.home{
+  position: absolute;
+  top: 51rem;
+  width: 100%;
+  height: 456%;
+  background: rgb(255, 254, 254);
+  font-size: 20px;
+  font-family: georgia; 
+}
+.home .add{
+  position: absolute;
+  top: 1.2%;
+  left: 4%;
+}
+.home .phone{
+  position: absolute;
+  top: 1.5%;
+  right: 27%;
+}
+.button{
+  font-family: georgia; 
+  position: relative;
+  cursor: pointer;
+  top: 1%;
+  left: 70%;
+  margin-left: 40px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50px;
+  line-height: 60px;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home .button .icon {
+ font-size: 25px;
+}
+.face a{
+  color: black;
+  text-decoration: none;
+}
+.face a:hover{
+  color: #316FF6; 
+}
+
+
+.wat a{
+  color: black;
+  text-decoration: none;
+}
+.wat a:hover{
+  color:		 #075E54; 
+}
+
+.insta a{
+  color: black;
+  text-decoration: none;
+}
+.insta a:hover{
+  color: 	#833AB4;
+}
+
+.you a{
+  color: black;
+  text-decoration: none;
+}
+.you a:hover{
+  color: #e1306c;
+}
+
+.home .button:hover{
+   width: 70px;
+   transition: 0.7s; 
+}
+.sun button{
+  position: relative;
+  top: -18rem;
+  left: 40%;
+  outline: 0;
+  border: 0;
+  background: #3431f6;
+  padding: 20px 70px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+.sun a:hover{
+  color: #ff0000;
+}
+.sun button:hover{
+ background: blue; 
+}
+.sun a{
+  color: white;
+  font-size: 20px;
+  font-family: 'poppins' sans-serif;
+  text-decoration: none;
+}
+.sun marquee{
+  position: absolute;
+  top: 11rem;
+  left: 23%;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: georgia; 
+  background: transparent;
+  width: 50%;
+  opacity: 70%;
+}
+.case{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 56rem;
+  font-size: 20px;
+  color: black;
+  font-family: georgia; 
+}
+.case .vv h1{
+  position: absolute;
+   top: 73%;
+    right: 7%; 
+}
+.case .pp{
+  position: relative;
+  width: 50%;
+  height: 70%;
+ }
+.case .vv p{
+  position: absolute; 
+  top: 83%; 
+  right: 3%; 
+}
+ .case .mm{
+  position: relative;
+  width: 50%;
+  height: 70%;
+ }
+.case .mm h1{
+  position: relative;
+  margin-left: 14%;
+  margin-top: -5%; 
+  
+}
+.case .mm p{
+  position: relative;
+  left: 15%; 
+  margin-top: -3rem;
+}
+.audio{
+  position: absolute;
+  top: 60rem;
+  width: 50%;
+  height: 7%;
+  right: 1%;
+  background: rgb(0, 15, 56);
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  color: #fff;
+}
+.audio:hover{
+  background: linear-gradient(314deg, rgb(1, 39, 145)30% , rgb(3, 116, 8)50% );
+  cursor: pointer;
+}
+.audio p{
+  position: relative;
+  margin-top: 1%;
+}
+.audio a{
+  color: rgb(255, 255, 255);
+
+}
+.audio a:hover{
+  color: rgb(255, 0, 0);
+
+}
+.video1{
+  position: absolute;
+  top: 180rem;
+  left: 5%;
+}
+
+.video2{
+  position: absolute;
+  top: 180rem;
+  left: 52%;
+}
+.upcoming{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 215rem;
+  background:linear-gradient(315deg, #ffffff 2%, #1d8aff 54% ); 
+  color: black;
+  font-family: georgia; 
+  text-align: center;
+}
+.upcoming h1{
+  position: absolute;
+  top: 3rem;
+  left: 40%;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: georgia; 
+}
+.upcoming h2{
+  position: absolute;
+  top: 9rem;
+  left: 41.5%;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: cursive;
+}
+.upcoming .events{
+  background-color: #316FF6;
+  width: 95%;
+  height: 60%;
+  align-items: center;
+  position: relative;
+  top: 14rem;
+  left: 2.5%;
+  border-radius: 5%;
+}
+.upcoming .events::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/IMG-20221112-WA0004.jpg);
+  left: 0;
+  border-radius: 5%;
+  opacity: 60%;
+  transition: .5s;
+}
+.events:hover::before{
+  opacity: 80%;
+}
+footer.bottom{
+  position: absolute;
+  display: flex;
+  top: 555%;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: 30%;
+  background:linear-gradient(315deg, #fff 2%, #d7e1ec 74% );
+}
+a{
+  color: #ff0000;
+}
+footer.bottom .p1{
+  font-size: 3em;
+  left: 25%;
+ position: absolute;
+ font-family: georgia; 
+
+} 
+.ber .add{
+position: absolute;
+top: 5rem;
+left: 20%;
+}
+.ber .phone{
+position: absolute;
+top: 5.5rem;
+right: 23%;
+}
+.bet{
+font-family: georgia; 
+position: relative;
+cursor: pointer;
+top: 9rem;
+left: 70%;
+margin-left: 40px;
+display: inline-block;
+height: 60px;
+width: 60px;
+background-color: white;
+border-radius: 50px;
+line-height: 60px;
+text-align: center;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ber .bet .icon {
+font-size: 25px;
+}
+.face a{
+color: black;
+text-decoration: none;
+}
+.face a:hover{
+color: #316FF6; 
+}
+
+
+.wat a{
+color: black;
+text-decoration: none;
+}
+.wat a:hover{
+color: #075E54; 
+}
+
+.insta a{
+color: black;
+text-decoration: none;
+}
+.insta a:hover{
+color: 	#833AB4;
+}
+
+.you a{
+color: black;
+text-decoration: none;
+}
+.you a:hover{
+color: #e1306c;
+}
+
+.ber .bet:hover{
+width: 70px;
+transition: 0.7s; 
+}
+p.p2{
+  position: absolute;
+  top: 267rem;
+  left: 50%;
+}
